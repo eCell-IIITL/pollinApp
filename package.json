@@ -1,0 +1,36 @@
+{
+  "name": "pollingapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.2",
+    "express": "^4.17.1",
+    "file-system": "^2.2.2",
+    "lt": "^0.3.3",
+    "mongoose": "^5.9.12",
+    "nodemon": "^2.0.3",
+    "body-parser": "^1.19.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.3.0",
+    "eslint": "^7.3.0"
+  },
+  "scripts": {
+    "test": "\\",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/damn-dvlpr/pollingApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/damn-dvlpr/pollingApp/issues"
+  },
+  "homepage": "https://github.com/damn-dvlpr/pollingApp#readme"
+}

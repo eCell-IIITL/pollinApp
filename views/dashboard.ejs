@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="/public/css/bootstrap.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      /* background: linear-gradient(to right, #616161, #9bc5c3); */
+      height: 100%;
+      /* background: linear-gradient(to right, #ff512f, #f09819); */
+      background: #a8c0ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #a8c0ff, #3f2b96); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #a8c0ff, #3f2b96);
+      padding-top:50px;
+    }
+    html {
+      height: 100%;
+    }
+    .row {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .container .row {
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+    
+  </style>
+</head>
+<body>
+  <!-- <div class="alert alert-danger"><h1>Not Allowed!</h1></div> -->
+     <div class="row display-flex" style="margin-top:50px">
+    <% teams.forEach(function(team){ %>         
+<div class="col-6">
+    <div class="card text-center" style="margin-bottom:25px;">
+        <div class="card-body">
+          <h4 class="card-title"><%= team.Name %></h5>
+          
+          <div class="alert alert-success"><h6>Total Vote count:</h6><span id="votecount">
+               <%= team.votes %>
+          </span>
+        </div>
+          <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>  -->
+        </div>
+    </div>
+</div>
+<% }); %> 
+</div>
+<a href="/"><button class="btn btn-block btn-success">Home</button></a>
+</body> 

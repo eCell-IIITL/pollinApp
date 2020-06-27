@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="/public/css/bootstrap.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      /* background: linear-gradient(to right, #616161, #9bc5c3); */
+      /* background: linear-gradient(to right, #ff512f, #f09819); */
+      background: #a8c0ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #a8c0ff, #3f2b96); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #a8c0ff, #3f2b96);
+      height: 100%;
+      padding-top:50px;
+    }
+    html {
+      height: 100%;
+    }
+    .row {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .container .row {
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="text-center"><h1>Please Enter Team Details</h1></div>
+  <div class="row align-items-center">
+    <div class="col align-self-center" style="width:40%">
+      <form class="container" action="/register" method="POST">
+        <div class="form-group">
+          <label for="teamName">Team Name:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="teamName"
+            name="teamName"
+            required="true"
+          />
+        </div>
+        <div class="form-group">
+          <label for="member1">Member 1:</label>
+          <input type="text" class="form-control" id="member1" name="member1" />
+        </div>
+        <div class="form-group">
+          <label for="member2">Member 2:</label>
+          <input type="text" class="form-control" id="member2" name="member2" />
+        </div>
+        <div class="form-group">
+          <label for="member3">Member 3:</label>
+          <input type="text" class="form-control" id="member3" name="member3" />
+        </div>
+        <div class="form-group">
+          <label for="member4">Member 4:</label>
+          <input type="text" class="form-control" id="member4" name="member4" />
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+      </form>
+    </div>
+  </div>
+</body>

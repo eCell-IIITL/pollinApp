@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="/public/css/bootstrap.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      /* background: linear-gradient(to right, #616161, #9bc5c3); */
+      height: 100%;
+      /* background: linear-gradient(to right, #ff512f, #f09819); */
+      background: #a8c0ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #a8c0ff, #3f2b96); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #a8c0ff, #3f2b96);
+      padding-top:50px;
+    }
+    html {
+      height: 100%;
+    }
+    .row {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .container .row {
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="row h-100 align-items-center">
+    <div class="col container-fluid">
+      <div class="container text-center">
+        <img src="public/E-cell-Bird.png" height="80px" width="84px">
+        <h3>E-Cell Polling App</h3>
+        <p>
+          Please join as a team.
+        </p>
+        <% if(access!="registered"){ %>
+        <!-- <a href="/register"><button class="btn btn-primary btn-block">Register Team</button></a> -->
+        <br>
+        <a href="/join"><button class="btn btn-primary btn-block">Join a Team</button></a>
+        <br>
+        <% };%> 
+        <% if(access !="voted" && access =="registered"){ %>
+          <a href="/vote"><button class="btn btn-primary btn-block">Vote for a Team</button></a>
+          <br>
+          <%};%>
+          <div class="alert alert-dark">Dashboard will become live once the voting is over.</div>
+        <a href="/dashboard"><button class="btn btn-success btn-block">Goto the Dashboard</button></a>
+      </div>
+    </div>
+  </div>
+</body>
